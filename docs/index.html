@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Fully Test-time Adaptation for Tabular Data">
+  <meta property="og:title" content="Fully Test-time Adaptation for Tabular Data"/>
+  <meta property="og:description" content="Fully Test-time Adaptation for Tabular Data"/>
+  <meta property="og:url" content="https://wnjxyk.github.io/FTTA"/>
+  <meta name="keywords" content="Prompt Tuning, Out-of-Distribution Detection, Vision-Language Model, Foundation Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Fully Test-time Adaptation for Tabular Data</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            
+            <h1 class="title is-1 publication-title">Fully Test-time Adaptation for Tabular Data</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block"><a href="https://zhouz.dev" target="_blank">Zhi Zhou</a><sup>*</sup>,</span>
+              <span class="author-block"><a href="#" target="_blank">Kun-Yang Yu</a><sup>*</sup>,</span>
+              <span class="author-block"><a href="https://www.lamda.nju.edu.cn/guolz" target="_blank">Lan-Zhe Guo</a><sup>‡</sup>,</span>
+              <span class="author-block"><a href="https://cs.nju.edu.cn/liyf/index.htm" target="_blank">Yu-Feng Li</a><sup>‡</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">National Key Laboratory for Novel Software Technology, Nanjing University, China</span>
+              <span class="eql-cntrb"><br><small><sup>*</sup>These authors contributed equally</small></span>
+              <span class="eql-cntrb"><br><small><sup>‡</sup>Corresponding Author</small></span>
+              <span class="eql-cntrb"><br><small>
+                <a href="mailto:zhouz@lamda.nju.edu.cn">zhouz@lamda.nju.edu.cn</a>, <a href="mailto:yuky@lamda.nju.edu.cn">yuky@lamda.nju.edu.cn</a>
+              </small></span>
+            </div>
+
+            <div class="column has-text-centered"><div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/xxxx.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/WNJXYK/FTTA" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified"><p>
+          Tabular data plays a vital role in various real-world scenarios and finds extensive applications. Although recent deep tabular models have shown remarkable success, they still struggle to handle data distribution shifts, leading to performance degradation when testing distributions change. To remedy this, a robust tabular model must adapt to generalize to unknown distributions during testing. 
+          In this paper, we investigate the problem of fully test-time adaptation (FTTA) for tabular data, where the model is adapted using only the testing data. We identify three key challenges: the existence of label and covariate distribution shifts, the lack of effective data augmentation, and the sensitivity of adaptation, which render existing FTTA methods ineffective for tabular data. 
+          To this end, we propose the <i><b>F</b>ully <b>T</b>est-time <b>A</b>daptation for <b>T</b>abular data</i>, namely <i>FTAT</i>, which enables FTTA methods to robustly optimize the label distribution of predictions, adapt to shifted covariate distributions, and dynamically adapt the model for various tasks and models. 
+          We conduct comprehensive experiments on six benchmark datasets, which are evaluated using three metrics. The experimental results demonstrate that <i>FTAT</i> outperforms state-of-the-art methods by a margin. 
+        </p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">FTAT Setting and FTAT Approach</h2>
+          <div class="item">
+            <img style="width: 80%;" src="./static/images/method.png" alt="FTTA setting and FTAT approach"/>
+            <h2 class="subtitle">Figure: Overall illustation of FTTA setting and FTAT approach</h2>
+          </div>
+        </div>
+      </div>
+      <div class="content has-text-justified"><p>
+        We studies the xxx.
+      </p></div>
+    </div>
+  </div>
+</section>
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{zhou24ftta,
+    author       = {Zhi Zhou and Yu-Kun Yang and Lan-Zhe Guo and Yu-Feng Li},
+    title        = {Fully Test-time Adaptation for Tabular Data},
+    booktitle    = {Proceedings of the 39th AAAI conference on Artificial Intelligence},
+    year         = {2025}
+}</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer"> 
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>

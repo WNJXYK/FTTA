@@ -1,6 +1,6 @@
 # Fully Test-time Adaptation for Tabular Data
 <p align="center">
-🏠 <a href="" target="_blank">Homepage</a> • 📃 <a href="https://arxiv.org/abs/" target="_blank">Paper</a><br>
+🏠 <a href="" target="_blank">Homepage</a> • 📃 <a href="https://arxiv.org/abs/2412.10871" target="_blank">Paper</a><br>
 </p>
 
 This is the official code for paper titled: Fully Test-time Adaptation for Tabular Data

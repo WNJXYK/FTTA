@@ -86,7 +86,7 @@ Please cite the paper if you refer to our code or paper from FTTA.
 
 ```
 @inproceedings{zhou24ftta,
-    author       = {Zhi Zhou and Yu-Kun Yang and Lan-Zhe Guo and Yu-Feng Li},
+    author       = {Zhi Zhou and Kun-Yang Yu and Lan-Zhe Guo and Yu-Feng Li},
     title        = {Fully Test-time Adaptation for Tabular Data},
     booktitle    = {Proceedings of the 39th AAAI conference on Artificial Intelligence},
     year         = {2025}
